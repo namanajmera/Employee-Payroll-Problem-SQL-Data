@@ -15,3 +15,10 @@ create table employee_payroll
     PRIMARY KEY (id)
 );
 show tables;
+desc employee_payroll;
+
+#UC3
+insert into employee_payroll (name,salary,start) values
+('Bill',100000.00,'2018-01-03'),
+('Mark',200000.00,'2019-11-13'),
+('Charlie',300000.00,'2020-05-21');
