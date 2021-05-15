@@ -56,3 +56,11 @@ select count(*) from employee_payroll;
 alter table employee_payroll add phone int after gender;
 alter table employee_payroll add address varchar(250) DEFAULT 'TBD' after phone;
 alter table employee_payroll add department varchar(250) NOT NULL after address;
+
+select * from employee_payroll;
+#UC9
+alter table employee_payroll change salary basic_pay double;
+alter table employee_payroll add deductions double NOT NULL after basic_pay;
+alter table employee_payroll add taxable_pay double NOT NULL after deductions;
+alter table employee_payroll add income_tax double NOT NULL after taxable_pay;
+alter table employee_payroll add net_pay double NOT NULL after income_tax;
