@@ -51,3 +51,8 @@ select min(salary) from employee_payroll;
 select max(salary) from employee_payroll;
 
 select count(*) from employee_payroll;
+
+#UC8
+alter table employee_payroll add phone int after gender;
+alter table employee_payroll add address varchar(250) DEFAULT 'TBD' after phone;
+alter table employee_payroll add department varchar(250) NOT NULL after address;
